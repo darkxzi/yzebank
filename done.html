@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    color: #340067;
+    text-decoration: none;
+  }
+  img {
+    width: 135px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+   body {
+   font-family: 'Archivo', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   }
+</style>
+<body>
+<a href="fund.html" style="font-size: 19px; font-weight: bold;">Done</a>
+<br />
+<br />
+<center>
+<img src="done.png" alt="" />
+<br>
+<b style="font-size: 20px;">Transfer Successful</b>
+<br />
+<h5 id="RES"></h5>
+<br />
+<br />
+<br />
+<br />
+<br />
+<p style="color: #FF5562;">Account detials above will <br />be credited immediately.</p>
+</body>
+
+</html>
+  <script>
+var data = window.location.search;
+var params = new URLSearchParams(data);
+console.log(params);
+var name = params.get("name");
+var number = params.get("number");
+var bank = params.get("bank");
+var getData = "Account Name : "+name+"<br><br><br>";
+getData += "Account Number : "+number+"<br><br><br>";
+getData += "Bank Name: "+bank;
+document.getElementById("RES").innerHTML = getData;
+</script>

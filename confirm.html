@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://kit.fontawesome.com/3ca0a9bad6.js" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+  * {
+    margin: 0 auto;
+  }
+  img {
+    width: 149px;
+  }
+  .container {
+    width: 89%;
+    height: 185px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #F3F7FD;
+    color: #18294B;
+  }
+  hr {
+    color: #E0E5EF;
+    padding: 0px;
+    background: #E0E5EF;
+  }
+  body {
+   font-family: 'Archivo', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   }
+
+</style>
+<body> 
+<center>
+
+<img src="dark.jpeg" alt="" />
+<br />
+<br />
+<br />
+<h3 style="font-size: 17px;">How would you like to pay?</h3>
+<br />
+<br />
+</center>
+<div class="container">
+  <br />
+  <p style="margin-left: 15px" onclick="myAlert()"><i class="fa-solid fa-credit-card"></i> <space>Pay with Debit Card</p>
+  <br />
+  <hr>
+  <br />
+  <p style="margin-left: 15px" onclick="link1()"><i class="fa-solid fa-building-columns"></i><space>Pay with Bank Transfer</p>
+  <br />
+  <hr>
+<br />
+  <p style="margin-left: 15px" onclick="myDis()"><i class="fa-solid fa-building-columns"></i><space>Pay with Bank</p>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <center>
+<a href="fund.html" style="color: #E44D5F; text-decoration: none;">Cancel Payment</a>
+</body>
+
+</html>
+<script>
+  function myAlert() {
+    alert('Not yet available.');
+  }
+  
+  function myDis() {
+    alert('Not available yet.');
+  }
+  
+  function link1() {
+    location.href = 'pay.html';
+  }
+</script>

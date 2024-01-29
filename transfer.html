@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+ <script>
+        function passvalue(){
+            var Phone=document.getElementById("Amount").value;
+            localStorage.setItem("textvalue", Phone);
+
+            var amount=document.getElementById("phone").value;
+            localStorage.setItem("textmiddle", amount);
+
+        }
+    </script>
+    
+<style>
+  body {
+    background: #340067;
+  }
+  .container {
+    width: 97%;
+    border-radius: 8px;
+    background: #F8F8F8;
+    height: 520px;
+  }
+  button {
+    background: #34016A;
+    width: 94%;
+    color: white;
+    border-radius: 9px;
+    margin-left: 11px;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  input {
+    border: 3px solid #340067;
+    width: 85%;
+    padding: 10px;
+    border-radius: 0px;
+    margin-left: 12px;
+  * {
+    box-sizing: border-box;
+  }
+  input[type=select] {
+    border: 3px solid #340067;
+    width: 85%;
+    padding: 10px;
+    border-radius: 0px;
+    margin-left: 12px;
+  }
+</style>
+<body>
+    <form method="get" action="done.html">
+  <div class="container">
+<h1 style="color: #340067; margin-left: 12px; margin-top: 40px;">Transaction Details</h1>
+<form action="confirm.html"onsubmit="myFunction()">
+<select id="Phone" name="Phone" style="border: 3px solid #340067; width: 20%; background: transparent; margin-left: 18px; padding: 6px; font-size: 20px; color: #340067;">
+  <option>₦</option>
+  <option>$</option>
+  <option>£</option>
+  <option>¥</option>
+  <option>€</option>
+  <option>CH¢</option>
+  <option>CFA</option>
+</select>
+<input type="tel" name="number" value="" placeholder="Amount" style="float: right; border: 3px solid #340067;
+    width: 60%;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 0px; margin-right: 13px; font-weight: bold; color: black;" required="">
+    <br />
+    <br />
+    <label for="Account Name" style="padding-left: 13px; font-size: 19px; color: #340067; ">Account Name
+     <input type="text" name="name" value="" required="">
+    </label>
+    <br />
+    <br />
+     <label for="Account Number" style="padding-left: 13px; font-size: 19px; color: #340067; ">Account Number
+    <input type="tel" maxlength="10" minlength="10" required="">
+    </label>
+<br />
+<br />
+<select class="select" name="bank" value="" required style="border: 3px solid #340067;
+    width: 92%;
+    font-size: 18px;
+    border-radius: 0px;
+    margin-left: 12px;
+    background: transparent;
+    padding: 7px;
+    color: #340067;;
+">
+<option value="">Select Bank</option>
+</option>
+<option
+value="Absa SA">Absa SA
+</option>
+<option
+value="African Bank Limited">African Bank Limited
+</option>
+<option
+value="ASO Saving and Loan">ASO Saving and Loan
+</option>
+<option
+value="Access Bank PLC">Access Bank PLC
+</option>
+<option
+value="Asset Matrix MFB">Asset Matrix MFB
+</option>
+<option
+value="Bank of America">Bank of America
+</option>
+<option
+value="Bank of India">Bank of India
+</option>
+<option
+value="Capital One">Capital One
+</option>
+<option
+value="Capitec Bank">Capitec Bank
+</option>
+<option
+value="Citi bank">Citi bank
+</option>
+<option
+value="Chase Bank">Chase Bank
+</option>
+<option
+value="Diamond Bank">Diamond Bank
+</option>
+<option
+value="Eco Bank PLC">Eco Bank PLC
+</option>
+<option
+value="Enterprise Bank">Enterprise Bank
+</option>
+<option
+value="Eyowo MFB Bank">Eyowo MFB Bank
+</option>
+<option
+value="First Monie Wallet">First Monie Wallet
+</option>
+<option
+value="First Rand Bank">First Rand Bank
+</option>
+<option
+value="Fidelity Bank">Fidelity Bank
+</option>
+<option
+value="First Bank of Nigeria">First Bank of Nigeria
+</option>
+<option
+value="First City Monument Bank" >First City Monument Bank
+</option>
+<option
+value="GTBank" >GTBank
+</option>
+<option
+value="ICICI Bank" >ICICI Bank
+</option>
+<option
+value="Induslnd Bank" >Induslnd Bank
+</option>
+<option
+value="Investec" >Investec
+</option>
+<option
+value="Habib Bank Limited">Habib Bank Limited
+</option>
+<option
+value="Heritage Banking" >Heritage Banking
+</option>
+<option
+value="Keystone Bank" >Keystone Bank
+</option>
+<option
+value="Kuda MFB" >Kuda MFB
+</option>
+<option
+value="MOMO">MOMO
+</option>
+<option
+value="MONIE POINT">MONIE POINT
+</option>
+<option
+value="National Bank of Pakistan">National Bank of Pakistan
+</option>
+<option
+value="Nedbank">Nedbank
+</option>
+<option
+value="Opay(PAYCOM)">Opay(PAYCOM)
+</option>
+<option
+value="PAGA">PAGA
+</option>
+<option
+value="Palmpay">Palmpay
+</option>
+<option
+value="Parkway Bank">Parkway Bank
+</option>
+<option
+value="PNC Bank">PNC Bank
+</option>
+<option
+value="Polaris Bank">Polaris Bank
+</option>
+<option
+value="Providus Bank">Providus Bank
+</option>
+<option
+value="Rubies MFB">Rubies MFB
+</option>
+<option
+value="Stanbic IBTC Bank">Stanbic IBTC Bank
+</option>
+<option
+value="Standard Charterted Bank">Standard Charterted Bank
+</option>
+<option
+value="Sterling Bank">Sterling Bank
+</option>
+<option
+value="State Bank of India">State Bank of India
+</option>
+<option
+value="TD Bank">TD Bank
+</option>
+<option
+value="Truist">Truist
+</option>
+<option
+value="United Bank of Africa" >United Bank of Africa</option>
+<option
+value="United Bank Limited" >United Bank Limited
+</option>
+<option
+value="Unity Bank Plc">Unity Bank Plc</option>
+<option
+value="U.S Bank">U.S Bank
+</option>
+<option
+value="WEMA Bank">WEMA Bank
+</option>
+<option
+value="Yes Bank">Yes Bank
+</option>
+<option
+value="Zenith Bank Plc">Zenith Bank Plc
+</option>
+</select>
+
+<br />
+<br />
+ <label for="eMail" style="padding-left: 13px; font-size: 19px; color: #340067; ">eMail
+    <input type="email" required="">
+    </label>
+<br />
+<button onclick="passvalue();">Submit</button>
+</body>
+
+</html>

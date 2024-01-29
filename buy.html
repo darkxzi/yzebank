@@ -1,0 +1,83 @@
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Buy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,500&family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #34016A;
+            align-items: center;
+           justify-content: center;
+            margin: 0;
+        }
+        .box {
+            width: 90%;
+            height: 390px;
+            background: #ffffff;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .box h2 {
+          color: #34016A;
+            text-align: center;
+        }
+        .box p {
+            padding-left: 15px;
+            color: #34016A;
+        }
+        .box input {
+            width: 90%;
+            height: 40px;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+        .box button {
+            width: 90%;
+            height: 45px;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid black;
+            background: #34016A;
+            color: white;
+            border-radius: 6px;
+            font-size: 15px;
+            
+        }
+        * {
+          margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+  <br />
+  <br />
+  <br />
+    <div class="box">
+        <br />
+
+        <h2>Access Username</h2>
+          <br />
+
+        <p>Fill in your details and proceed</p>
+          <br />
+            <form action="pay.html">
+        <form id="buyForm">
+            <input type="text" placeholder="Full Name" required><br>
+            <input type="email" id="email" placeholder="Email" required=""><br>
+            <input type="text" placeholder="Preferred Username" required="">
+            <br />
+            <button id="proceedButton">Proceed</button>
+            <br />
+            <p style="font-family:
+    font-family: 'Archivo', sans-serif;
+font-family: 'Quicksand', sans-serif; text-decoration: underline;
+" onclick="myAlert">Info</p>
+        </form>
+    <script>
+      function myAlert() {
+        alert('Your preferred username registered will be used to login into the app using your device, one device one registered username, Username cost ₦2,000.00.')
+      }
+    </script>

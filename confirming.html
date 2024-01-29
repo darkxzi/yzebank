@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <title></title>
+</head>
+<style>
+  body {
+  font-family: 'Archivo', sans-serif;
+font-family: 'Quicksand', sans-serif;
+    background: #FFFFFF;
+  }
+  img {
+    width: 100px;
+  }
+  .loading-text {
+      font-size: 19px;
+      font-weight: bold;
+      color: #3498db;
+      animation: loading 1s infinite;
+    }
+
+    @keyframes loading {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+  
+</style>
+<body>
+  <center>
+    <img src="dark.jpeg" alt="" style="width: 149px;"/>
+
+    <br />
+    <br />
+    <br />
+    <br />
+<img src="confirming.jpeg" alt="" />
+<br />
+<b style="font-size: 20px;">Processing</b>
+<br />
+<br />
+<div class="loading-text">Confirming Payments...</div>
+<br />
+</body>
+
+</html>
+ <script>
+        setTimeout(function() {
+          window.location.href = "redirect.html";
+        }, 7500);
+
+              </script>
